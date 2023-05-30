@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 50%;
+  font-family: sans-serif;
+  background-image: url(https://cdn.wallpapersafari.com/33/44/Al7ytc.jpg);
+  background-size: 100%;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.fondo{
+  background-image: url(https://preview.redd.it/totk-people-were-asking-for-just-the-totk-background-as-a-v0-82etmuuy1xta1.png?width=640&crop=smart&auto=webp&s=c3cc8dbc8062789fef710949cc70d8828ce1e3e4);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="jugabilidad.html" class="w3-button w3-block w3-black">JUGABILIDAD</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="cronología.html" class="w3-button w3-block w3-black">CRONOLOGÍA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="desarrollo.html" class="w3-button w3-block w3-black">DESARROLLO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="historia.html" class="w3-button w3-block w3-black">HISTORIA</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center"> 
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="fondo">
+
+<!-- Jugabilidad Container -->
+<div class="w3-container" id="Jugabilidad">
+  <div class="w3-content" style="max-width:700px; color: white">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">JUGABILIDAD</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <p>The Legend of Zelda es una mezcla de puzles, acción, estrategia y exploración. Estos elementos se han mantenido a lo largo de la saga, pero con mejoras en cada juego. La mayoría de los juegos de The Legend of Zelda implican la localización y exploración de mazmorras, en los que se resuelven puzzles y derrotan enemigos. Luego de pasar toda la mazmorra, se lucha con el enemigo final de la mazmorra. Cada mazmorra tiene un objeto o arma importante, para llegar hasta el jefe de la mazmorra. Algunos objetos se encuentran en casi toda la saga (como por ejemplo, el Bumerán), mientras que otros son exclusivos de un solo juego (como el Telescarabajo).</p>
+      </a>
+      <img src="https://i0.wp.com/telebunny.net/toastyblog/wp-content/uploads/2012/10/zelda8-5.gif?resize=480%2C448" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
